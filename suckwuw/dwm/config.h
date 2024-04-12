@@ -1,5 +1,10 @@
 /* See LICENSE file for copyright and license details. */
 
+#define XF86XK_AudioRaiseVolume	0x1008FF13   /* Volume control up          */
+#define XF86XK_AudioLowerVolume	0x1008FF11   /* Volume control down        */
+#define XF86XK_AudioMute	0x1008FF12   /* Mute sound from the system */
+
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -60,6 +65,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
+/* command to increase the volume */
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -90,6 +96,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY|ShiftMask,		XK_c,	   spawn,	  SHCMD("maim -s | xclip -selection clipboard -t image/png")},	
+	{ 0,	   XF86XK_AudioRaiseVolume,	   spawn,         SHCMD("amixer -D pulse sset Master 5%+")},
+	{ 0,	   XF86XK_AudioLowerVolume,  	   spawn,	  SHCMD("amixer -D pulse sset Master 5%-")},
+	{ 0,	   XF86XK_AudioMute,		   spawn,	  SHCMD("/home/bluecake/.cupcakescripts/barcakescripts/toggle_audio.sh")},	   
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
