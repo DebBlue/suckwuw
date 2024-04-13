@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Welcome to the realm of suckwuw, the dynamic window manager crafted for supreme efficiency and aesthetic mastery. Prepare to embark on a journey of seamless multitasking and sublime desktop customization.## Installation and Configuration
+Welcome to the suckwuw, the dynamic window manager crafted for supreme efficiency and aesthetic mastery. Prepare to embark on a journey of seamless multitasking and sublime desktop customization.## Installation and Configuration
 
 To wield the power of suckwuw, follow these sacred steps:
 
