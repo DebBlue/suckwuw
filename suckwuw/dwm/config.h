@@ -3,7 +3,8 @@
 #define XF86XK_AudioRaiseVolume	0x1008FF13   /* Volume control up          */
 #define XF86XK_AudioLowerVolume	0x1008FF11   /* Volume control down        */
 #define XF86XK_AudioMute	0x1008FF12   /* Mute sound from the system */
-
+#define XF86XK_MonBrightnessUp   0x1008FF02  /* Monitor/panel brightness */
+#define XF86XK_MonBrightnessDown 0x1008FF03  /* Monitor/panel brightness */
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -98,7 +99,9 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_c,	   spawn,	  SHCMD("maim -s | xclip -selection clipboard -t image/png")},	
 	{ 0,	   XF86XK_AudioRaiseVolume,	   spawn,         SHCMD("amixer -D pulse sset Master 5%+")},
 	{ 0,	   XF86XK_AudioLowerVolume,  	   spawn,	  SHCMD("amixer -D pulse sset Master 5%-")},
-	{ 0,	   XF86XK_AudioMute,		   spawn,	  SHCMD("/home/bluecake/.cupcakescripts/barcakescripts/toggle_audio.sh")},	   
+	{ 0,	   XF86XK_AudioMute,		   spawn,	  SHCMD("/home/bluecake/.cupcakescripts/barcakescripts/toggle_audio.sh")},
+	{ 0,	   XF86XK_MonBrightnessUp,	   spawn,	  SHCMD("light -A 5%")},
+	{ 0,	   XF86XK_MonBrightnessDown,	   spawn,	  SHCMD("light -U 5%")},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
