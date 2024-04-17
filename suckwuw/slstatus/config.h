@@ -67,9 +67,9 @@ static const struct arg args[] = {
 	/* function format         		argument */
 	{username,	"🍜☯🍥🌸⛩%s⛩🌸🍥☯🍜 ",	"NULL"},
 	{netspeed_rx,	"[%sB/s ] ", 		"wlp0s20f3"},
-	{run_command,	"[%s] ",         	"/home/bluecake/.cupcakescripts/barcakescripts/kawaii_battery.sh" },
-	{run_command,	"[%s] ",		"/home/bluecake/.cupcakescripts/barcakescripts/Genki_Brightness.sh"},
-	{run_command, 	"[%s] ", 		"/home/bluecake/.cupcakescripts/barcakescripts/volume.sh"},
+	{run_command,	"[%s] ",         	"/home/bluecake/suckwuw/suckwuw/barcakescripts/kawaii_battery.sh" },
+	{run_command,	"[%s] ",		"/home/bluecake/suckwuw/suckwuw/barcakescripts/Genki_Brightness.sh"},
+	{run_command, 	"[%s] ", 		"/home/bluecake/suckwuw/suckwuw/barcakescripts/volume.sh"},
 	{cpu_perc,	" [CPU 🧠 %s%%] ",	NULL},
 	{ram_perc,	" [RAM 💿 %s%%] ",	NULL},
 	{uptime,	"[🤖 %s]",		NULL},
