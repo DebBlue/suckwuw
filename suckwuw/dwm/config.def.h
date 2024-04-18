@@ -19,10 +19,24 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+/*My Colors */
+static const char col_golden_light[]   = "#FFD700"; // Light golden color
+static const char col_golden_dark[]    = "#FFA500"; // Dark golden color
+static const char col_blue1[]          = "#1f2241"; // Retaining the original blue color
+static const char col_blue2[]          = "#3e4482"; // Retaining the original blue color
+static const char col_black[]          = "#000000"; // Black color
+
+
 static const char *colors[][3]      = {
+	[SchemeNorm] = { col_golden_light, col_blue1, col_blue1 },
+    	[SchemeSel] = { col_golden_light, col_golden_dark, col_golden_dark },
+
+
+
+
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+/*	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  }, */
 };
 
 /* tagging */
