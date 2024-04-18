@@ -16,7 +16,7 @@ To wield the power of suckwuw, follow these sacred steps:
 1. **Install Required Packages:**
    - **Arch Linux and Variants:**
      ```bash
-     sudo pacman -Sy base-devel git libx11 libxft xorg-server xorg-xinit ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji picom libxinerama maim
+     sudo pacman -Sy base-devel git libx11 libxft xorg-server xorg-xinit ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji picom libxinerama maim xclip
      ```
    - **Debian and Variants:**
      ```bash
