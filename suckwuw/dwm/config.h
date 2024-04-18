@@ -29,7 +29,7 @@ static const char col_black[]          = "#000000"; // Black color
 
 static const char *colors[][3]      = {
 	[SchemeNorm] = { col_golden_light, col_blue1, col_blue1 },
-    	[SchemeSel] = { col_golden_light, col_golden_dark, col_golden_dark },
+    	[SchemeSel] = { col_blue1, col_golden_dark, col_golden_dark },
 
 
 
