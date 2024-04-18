@@ -16,11 +16,11 @@ To wield the power of suckwuw, follow these sacred steps:
 1. **Install Required Packages:**
    - **Arch Linux and Variants:**
      ```bash
-     sudo pacman -Sy base-devel git libx11 libxft xorg-server xorg-xinit ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji picom libxinerama
+     sudo pacman -Sy base-devel git libx11 libxft xorg-server xorg-xinit ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji picom libxinerama maim
      ```
    - **Debian and Variants:**
      ```bash
-     sudo apt install libx11-dev libxft-dev libxinerama-dev
+     sudo apt install libx11-dev libxft-dev libxinerama-dev xorg
      ```
 
 2. **Clone the Repository:**
